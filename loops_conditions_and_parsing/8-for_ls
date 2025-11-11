@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #for_ls
-for ls in *; 
+for ls in `ls $search_dir`; 
 do
 echo "$ls"
 done
