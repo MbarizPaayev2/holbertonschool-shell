@@ -2,7 +2,7 @@
 #for_ls
 for ls in *; 
 do
-if [ $ls == *-* ]; 
+if [[ $ls == *-* ]]; 
 then 
 	echo "${ls#*-}"
 else
