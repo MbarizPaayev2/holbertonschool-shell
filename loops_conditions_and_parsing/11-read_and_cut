@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
 #script run  adn cut 
-while IFS=: read -r username password uid gid gecos home_dir shell; do
-  echo "Username: $username, UID: $uid, Home Directory: $home_dir"
+while IFS=: read -r username uid home_dir; do
+  echo "$username,$uid,$home_dir"
 done < /etc/passwd
