@@ -1,6 +1,4 @@
-#!/usr/bin/env bash 
-#script run  adn cut while read -r username _  uid __ home_dir
-while IFS=: read -r username uid home_dir;
-do
-  echo "$username:${uid}:$home_dir"
-done < /etc/passwd
+#!/bin/bash 
+#this is script
+line=/etc/passwd
+while read -r line; do echo "$line" | cut -d: -f1,3,6; done < '/etc/passwd'
