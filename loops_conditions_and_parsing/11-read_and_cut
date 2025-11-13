@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
 #script run  adn cut 
-while IFS=: read -r username uid home_dir; do
-  echo "$username,$uid,$home_dir"
+while  read -r username uid home_dir; do
+  echo "$username$uid$home_dir"
 done < /etc/passwd
