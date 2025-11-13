@@ -1,0 +1,3 @@
+#!/usr/bin/env bash 
+# this is script 
+pkill -9 "$(pgrep 'To infinity and beyond')"
