@@ -1,3 +1,3 @@
 #!/usr/bin/env bash 
 #this is script
-kill -9 "$(ps aux | grep  "highlander")"
+kill -9 "$( psgrep -f   "highlander")"
